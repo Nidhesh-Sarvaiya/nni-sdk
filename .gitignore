@@ -1,0 +1,36 @@
+# =====================================================================
+# PROPRIETARY RUST SOURCE EXCLUSION (CRITICAL)
+# =====================================================================
+# Permanently block your proprietary source code from ever being uploaded
+/src/
+/Cargo.toml
+/Cargo.lock
+
+# Block all local Cargo compilation, build, and debug caches
+/target/debug/
+/target/incremental/
+/target/release/build/
+/target/release/deps/
+/target/release/examples/
+/target/release/incremental/
+/target/.rustc_info.json
+/target/CACHEDIR.TAG
+/target/release/.fingerprint/
+/target/release/*.d
+
+# =====================================================================
+# EXPLICIT INCLUSION LIST (THE ONLY BINARIES ALLOWED IN GITHUB)
+# =====================================================================
+# Force Git to keep only the pre-compiled binary libraries for users
+!/target/release/*.dll
+!/target/release/*.so
+!/target/release/*.dylib
+
+# =====================================================================
+# LOCAL PYTHON RUNTIME CACHES
+# =====================================================================
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/
