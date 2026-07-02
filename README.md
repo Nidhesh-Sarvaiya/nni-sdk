@@ -74,14 +74,12 @@ The core library is organized as follows:
 
 ```text
 nni-sdk/
-├── nni_sdk/                  # Python FFI Package
-│   ├── __init__.py           # OS detection & ctypes bindings
+├── target/                   # Python FFI Package
 │   ├── nni_core.dll          # Pre-compiled Windows AMD64 Engine
 │   └── nni_core.so           # Pre-compiled Linux x86_64 Engine
-├── src/                      # Native Rust Source Code (for reference)
-│   └── lib.rs                # Memory-mapping & cryptography implementation
 ├── whitepaper/               # LaTeX Source for Research Paper
-│   └── whitepaper.tex        
+│   └── whitepaper.pdf        
+├── .gitignore
 ├── LICENSE                   # MIT License
 └── README.md
 ```
